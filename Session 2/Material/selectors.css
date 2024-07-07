@@ -1,0 +1,94 @@
+/* universal selectors */
+/* * {
+   background-color: lightblue; 
+} */
+body{
+    background-image:url("./3.jpg");
+
+}
+/* .txt {
+  background-color: yellow;
+} */
+
+.class1,
+.txt {
+  color: red;
+}
+
+div.container {
+  border-bottom: 1px solid;
+}
+
+/* div .class1{
+    border:1px solid green;
+} */
+
+#title {
+  border-bottom: 1px dashed black;
+}
+
+.class5 {
+  text-decoration: line-through;
+}
+
+div  + p {
+  border: 1px solid green;
+  font-size: 28px;
+}
+
+/* p ~ ul{
+    background-color:red;
+} */
+
+
+/* ul ~ li{
+    background-color:green;
+} */
+
+
+input[type="email"]{
+    width:320px;
+}
+
+input[type="name"]{
+    width:120px;
+}
+/*[attr^="value"] equal value */
+
+a[href="./index.html"]{
+    background-color:rgb(73, 182, 83);
+}
+/*[attr^="value"] begin with value */
+a[href^="https"]{
+    background-color:pink !important;
+}
+
+/*[attr^="value"] end with value */
+
+a[href$=".html"]{
+    color:rgb(75, 15, 170) !important;
+    font-size:40px;
+}
+
+
+/*[attr^="value"] contains  value */
+
+a[href*="google"]{
+    color:rgb(8, 71, 171) !important;
+    font-size:40px;
+    padding:10px;
+    margin:5px 10px ;
+}
+
+a:hover{
+    background:lightgray;
+    font-size:10px;
+}
+
+input:active{
+    background-color:green;
+}
+
+input:focus{
+    background:yellow;
+}

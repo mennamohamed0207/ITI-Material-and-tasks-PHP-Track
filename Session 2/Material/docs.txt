@@ -1,0 +1,90 @@
+CSS => cascading style sheets
+cascading => css way to applies in one style on top another
+style sheets => controls look of the web docs
+
+
+HTML & CSS 
+
+3 WAYS to use Css =>    1- external CSS
+                        2-internal css
+                        3-inline css
+
+
+INLINE CSS => styleetsheet , appy style to single elem , add attr style to tag                         
+
+CSS syntax=>
+
+3parts => selector, property & val
+
+
+selector { // start of decleartion block
+
+property: value;
+color:red;
+}// end of decleartion block
+
+//CSS Selectors => select specific elements 
+5 types => simple selector , combinator , pseudo-class , pseudo-element , attribute selector 
+
+
+simple selector => based on name , id  , class 
+combinator => select element based on element   based on specific relationship between them 
+pseudo-class => select element based on certain state 
+pseudo element => select & type  ap art of element
+attribute selector => select elment based on attr val.
+
+comment 
+//
+/**/ 
+/**
+
+
+
+*/
+
+
+All css Simple selectors 
+
+selector => ex 
+#id  => #subtitle => unique 
+.class => .txt
+elment.class => p.txt
+* => *{}
+element => property
+elment, elment => div , h1 
+
+rules => don't start a class selector or id  with a number 
+         id => unique
+
+
+Descendant selectors => select element thast are descendants of another element
+
+
+Font => size , weight , color, family , style 
+ 
+font size => px , em , rem
+
+em = 1/16 px 
+
+
+Color => colorname , Rgb , Hex , Rgba , Hsl
+
+text-shadow =>{x , y , blur , color}
+
+
+
+box  modal => design & layout 
+=> margins , paddings , borders & actual contnent
+
+padding=> distance between  content & border
+border => between padding & margin 
+margin => surdounded area
+
+
+every elment => box modal => calc  actual wt & h 
+
+total wt of box with pd = wt content + pd left + pd right
+total wt of box with br = wt content + pd left + pd right + border left + border right
+total wt = wt content + pd left + pd right + border left + border right
+total wt of box = wt content + pd left + pd right + border left + border right +mr + ml
+

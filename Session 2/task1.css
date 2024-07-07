@@ -1,0 +1,58 @@
+*{
+    margin:0%;
+}
+
+.list{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2f6daa;
+    padding: 2.5%  0px 2.5% 0px;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    border: 4px solid black;
+
+    
+}
+
+.rest{
+    background-color: #c1d1e6;
+
+    
+}
+#inseredText
+{
+    color:rgb(133, 133, 171);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 2.5%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 2%;
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#actions{
+    background-color: #c1d1e6;
+}
+#Team{
+    background-color: #629ae3;
+}
+.surroundedBorder{
+    width: 100%;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+}
