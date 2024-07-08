@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  global scope */
+        :root {
+            --txtColor: blue;
+            --borderColor: lightpink;
+            --dashedBorder: 3px dashed var(--borderColor);
+            --font-size-title: 36px;
+            --base-num: 8px;
+        }
+
+        section {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+
+        }
+
+        .pn-l {
+            padding-left: calc(var(--base-num) * 2) !important;
+
+        }
+
+        #sectionOne {
+            border-color: var(--borderColor);
+            /* border-color: lightpink; */
+        }
+
+        #sectionOne p:nth-child(2) {
+            color: var(--txtColor);
+            font-size: 14px;
+        }
+
+        #sectionTwo {
+            border: var(--dashedBorder);
+            /* border : 3px solid lightpink; */
+        }
+
+        #sectionTwo p {
+            background-color: var(--txtColor);
+        }
+
+        .txt {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: var(--font-size-title);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="title">
+        Hello World !!
+    </p>
+    <section id="sectionOne">
+        <p> P one in sec 1</p>
+        <p> P two in sec 1</p>
+
+    </section>
+
+    <section id="sectionTwo" class="pn-l">
+        <p class="txt"> P one in sec 2</p>
+        <p> P two in sec 2</p>
+    </section>
+</body>
+
+</html>

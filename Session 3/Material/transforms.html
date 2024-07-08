@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        section {
+            width: 300px;
+            border: 2px solid black;
+            margin: 20px auto;
+            text-align: center;
+            background-color: lightcyan;
+            /* transform:rotate(180deg);*/
+            transform: rotateX(10deg);
+            transform: skew(45deg);
+
+
+        }
+
+        img {
+            width: 50%;
+            opacity: 0.5;
+
+        }
+
+        section:hover {
+            transform: skew(0deg);
+
+        }
+
+        section:hover img {
+            border-radius: 50%;
+            opacity: 1;
+            transform: translate(0, -20px);
+        }
+
+        section>div {
+            opacity: 0;
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* infinity - 900 */
+        @media screen and (min-width:900px) {
+            div {
+                overflow: scroll;
+                background-color: green;
+            }
+
+        }
+
+     /* 576-400 */
+        @media screen and (max-width:576px) {
+            div {
+         
+                background-color: rgb(6, 43, 209);
+            }
+
+            section {
+                width: 250px;
+            }
+            
+            img{
+                transform:rotate(180deg);
+            }
+        }
+   /* 0-400 */
+        @media screen and (max-width:400px) {
+            div {
+                overflow: unset;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mianwrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque animi
+            delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita, hic
+            quod blanditiis quidem unde.
+            lorem200
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque animi
+            delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita, hic
+            quod blanditiis quidem unde.
+            lorem200
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque animi
+            delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita, hic
+            quod blanditiis quidem unde.
+            lorem200 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque
+            animi delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita,
+            hic quod blanditiis quidem unde.
+            lorem200 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque
+            animi delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita,
+            hic quod blanditiis quidem unde.
+            lorem200 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque
+            animi delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita,
+            hic quod blanditiis quidem unde.
+            lorem200 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque
+            animi delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita,
+            hic quod blanditiis quidem unde.
+            lorem200 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque
+            animi delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita,
+            hic quod blanditiis quidem unde.
+            lorem200 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque
+            animi delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita,
+            hic quod blanditiis quidem unde.
+            lorem200 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque
+            animi delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita,
+            hic quod blanditiis quidem unde.
+            lorem200 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quibusdam molestias! Doloremque
+            animi delectus laudantium impedit distinctio inventore ab voluptatibus eveniet totam nobis fugit expedita,
+            hic quod blanditiis quidem unde.
+            lorem200
+
+
+
+
+
+        </div>
+        <section>
+            <img src="imgs/1.jpg" />
+            <div id="internal">
+                <h2>Image</h2>
+                <p>Content</p>
+            </div>
+        </section>
+        <section>
+            <img src="imgs/2.jpg" />
+            <div>
+                <h2>Image</h2>
+                <p>Content</p>
+            </div>
+        </section>
+        <section>
+            <img src="imgs/6.jpg" />
+            <div>
+                <h2>Image</h2>
+                <p>Content</p>
+            </div>
+        </section>
+
+        <section>
+            <img src="imgs/1.jpg" />
+            <div id="internal">
+                <h2>Image</h2>
+                <p>Content</p>
+            </div>
+        </section>
+        <section>
+            <img src="imgs/2.jpg" />
+            <div>
+                <h2>Image</h2>
+                <p>Content</p>
+            </div>
+        </section>
+        <section>
+            <img src="imgs/6.jpg" />
+            <div>
+                <h2>Image</h2>
+                <p>Content</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!Doctype HTML>
+
+<html>
+
+<head>
+    <style>
+        #mainWrapper{
+            width:80%;
+            padding:10px;
+            margin:10px auto;
+        }
+        img{
+            width:100px;
+            height:150px;
+            opacity:0.2;
+            margin:0px 0px 10px 0px;
+            /* transform:rotate(-20deg); */
+            transition: width 2s , height 4s;
+
+        }
+
+        img:hover{
+            opacity:1;
+            /* transform:scale(1.5) rotate(0deg); */
+width:300px;
+height:400px;
+        }
+
+
+        img:active{
+            transform:scale(0.5);
+        }
+
+
+        div{
+            width:200px;
+            height:200px;
+            background-color:lightblue;
+            transition:width 3s;
+            margin-bottom:10px;
+        }
+
+        #div1{
+            transition-timing-function:linear;
+        }
+
+        #div2{
+            transition-timing-function:ease;
+        }
+        #div3{
+            transition-timing-function:ease-in;
+        }
+
+        #div4{
+            transition-timing-function:ease-out;
+        }
+        #div5{
+            transition-timing-function:ease-in-out;
+        }
+
+        div:hover{
+            width:100%;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="mainWrapper">
+        <img src="imgs/1.jpg" alt="" />
+        <img src="imgs/500cdb6eb373e9a4cbb5098d4c84d2a2.jpg" alt="" />
+        <img src="imgs/4.jpg" alt="" />
+        <img src="imgs/2.jpg" alt="" />
+
+
+    </div>
+    <div id="div1">linear trans</div>
+    <div id="div2">ease trans</div>
+    <div id="div3">ease-in trans</div>
+    <div id="div4">ease-out trans</div>
+    <div id="div5">ease-in-out trans</div>
+
+</body>
+
+</html>

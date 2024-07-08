@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+            box-sizing:border-box;
+        }
+
+        /* give all div name => grid-area name  */
+        #div1{
+            grid-area:header;
+        }
+        #div2{
+            grid-area:footer;
+        }
+        #div3{
+            grid-area:content;
+        }
+        #div4{
+            grid-area:links;
+        }
+        #div5{
+            grid-area:aside;
+        }
+
+        .container{
+            width:100vw;
+            padding:10px;
+            border:2px solid blue;
+            display:grid;
+            background-color:lightpink;
+            grid-template-columns: repeat(1fr,4);
+            grid-template-areas:"header header header header"
+                                "content content . links"
+                                "content content . aside"
+                                "footer footer footer footer";
+
+            gap: 10px;        
+            height: 90vh;            
+        }
+
+        .container>div{
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="div1">Header</div>
+        <div id="div2"> footer</div>
+        <div id="div3"> contnet</div>
+        <div id="div4">Links</div>
+        <div id="div5">aside</div>
+
+
+    </div>
+</body>
+
+</html>

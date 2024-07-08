@@ -1,0 +1,4 @@
+css variables
+var() => set val to the property => local / global 
+var(--name , value)
+  /* var(--dashedBorder , 3px dashed lightpink ) */
