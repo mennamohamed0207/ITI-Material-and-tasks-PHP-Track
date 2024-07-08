@@ -40,7 +40,7 @@
             grid-template-areas: "header header header header"
                 "header header header header"
                 "header header header header"
-               "header header header header";
+                "header header header header";
 
             gap: 10px;
             height: 90vh;
@@ -55,30 +55,123 @@
 
         .drawer {
             height: 100%;
-            width: 50%;
+            width: 20%;
             position: fixed;
             z-index: 1;
             top: 0;
             overflow-x: hidden;
             padding-top: 20px;
             left: 0;
-            background-color:white;
+            background-color: white;
+            padding: 20px;
+            font-family: sans-serif;
 
+        }
+
+
+        .list {
+            background-color: rgb(223, 156, 68);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+            padding: 1% 1% 1% 20%;
+            font-family: sans-serif;
+            color: white;
+        }
+
+
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5px;
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 0px;
+            padding-left: 20%;
+        }
+
+        .grid-item {
+            width: 100%;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            display: block;
         }
     </style>
 </head>
 
 <body>
     <div class="drawer">
-        <h1>INK</h1>
+        <img src="./Logo.jpg" alt="logo" /><br /><br /><br />
+        <Font><b>Portfolio</b></Font><br /><br />
+        <Font>About Us</Font><br /><br />
+        <Font>Blog</Font><br /><br />
+        <Font>Buy This Theme</Font><br /><br />
+        <br />
+        
+        
+        <img src="./socials.jpg" alt="socials" /><br />
+        <Font><b>A Text Widget</b></Font><br /><br />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus vel voluptas praesentium
+            exercitationem esse.</p><br /><br />
+        <Font><b>Flickr</b></Font><br /><br />
+        <div class="grid-container1">
+            <div class="grid-item"><img src="image1.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image2.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image3.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image4.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image5.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image6.jpg" alt="Image 3">
+            </div>
+        </div>
     </div>
-    <!-- <div class="container">
-        <div id="div1">Header</div>
-        <div id="div2"> footer</div>
-        <div id="div3"> contnet</div>
-        <div id="div4">Links</div>
-        <div id="div5">aside</div>
+    <div>
+        <ul class="list">
+            <li>All</li>
+            <li>Illustration</li>
+            <li>Motion</li>
+            <li>Photography</li>
+            <li>Print</li>
+        </ul>
+        <div class="grid-container2">
+            <div class="grid-item"><img src="image7.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image8.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image9.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image10.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image11.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image12.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image13.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image14.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image15.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image16.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image17.jpg" alt="Image 3">
+            </div>
+            <div class="grid-item"><img src="image18.jpg" alt="Image 3">
+            </div>
 
+        </div>
+    </div>
 
     </div> -->
 </body>
