@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example</title>
+    <style>
+        :root {
+            --animation-duration: 8s;
+            --radius: 300px;
+
+        }
+
+        /* styles.css */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .animation-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+
+        .animated-element {
+
+            margin: 0 auto;
+            /* Center the rectangle horizontally */
+            animation: moveElement 8s linear;
+            animation-duration: var(--animation-duration);
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+
+        @keyframes moveElement {
+            0% {
+                width: 500px;
+                /* Set the width */
+                height: 500px;
+                /* Set the height */
+                background-color: rgb(219, 78, 102);
+                /* Set the background color to pink */
+                border-radius: var(--radius) 5px 5px var(--radius);
+
+                /* Add rounded corners */
+            }
+
+            14% {
+                width: 500px;
+                /* Set the width */
+                height: 500px;
+                /* Set the height */
+                background-color: rgb(227, 68, 6);
+                /* Set the background color to pink */
+                border-radius: var(--radius) 5px var(--radius) var(--radius);
+
+                /* Add rounded corners */
+                transform: rotate(-45deg);
+
+
+            }
+            28%{ width: 500px;
+                /* Set the width */
+                height: 500px;
+                /* Set the height */
+                background-color: rgb(253, 152, 2);
+                /* Set the background color to pink */
+                border-radius: var(--radius) var(--radius) var(--radius) var(--radius);
+                /* Add rounded corners */
+                transform: rotate(-90deg);
+            }
+            42% {
+                width: 500px;
+                /* Set the width */
+                height: 500px;
+                /* Set the height */
+                background-color: rgb(227, 68, 6);
+                /* Set the background color to pink */
+                border-radius: var(--radius) 5px var(--radius) var(--radius);
+
+                /* Add rounded corners */
+                transform: rotate(-45deg);
+
+
+            }
+            56% {
+                width: 500px;
+                /* Set the width */
+                height: 500px;
+                /* Set the height */
+                background-color: rgb(219, 78, 102);
+                /* Set the background color to pink */
+                border-radius: var(--radius) 5px 5px var(--radius);
+                transform: rotate(-90deg);
+
+                /* Add rounded corners */
+            }
+
+            70%{  width: 500px;
+                /* Set the width */
+                height: 500px;
+                /* Set the height */
+                background-color: rgb(2, 44, 253);
+                /* Set the background color to pink */
+                border-radius:  5px  5px var(--radius) 5px;
+                /* Add rounded corners */
+                transform: rotate(-135deg);
+            }
+            84%{   width: 500px;
+                /* Set the width */
+                height: 500px;
+                /* Set the height */
+                background-color: rgb(253, 236, 2);
+                /* Set the background color to pink */
+                border-radius:  5px  5px 5px 5px;
+                /* Add rounded corners */
+                transform: rotate(-180deg);
+            }
+            100%{  width: 500px;
+                /* Set the width */
+                height: 500px;
+                /* Set the height */
+                background-color: rgb(2, 44, 253);
+                /* Set the background color to pink */
+                border-radius:  5px  5px var(--radius) 5px;
+                /* Add rounded corners */
+                transform: rotate(-135deg);
+            }
+        }
+
+        @keyframes movesecond {
+            
+               
+        
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="animated-element"></div>
+    </div>
+</body>
+
+</html>
