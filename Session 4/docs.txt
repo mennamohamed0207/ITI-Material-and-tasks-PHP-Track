@@ -1,0 +1,82 @@
+JS => scripting lang => (behaviour) => (controls, statement, system type , functions)
+
+scripting lang => not standalone lang 
+js => run client (browser)
+
+features JS:
+1- case sensetive => var a ;   is differ => var A;
+2- interpreted lang => code from up to down 
+3- loosely typed => Js => var x;   ::    strong typed (C# , Java) => int x= 5;
+var x=5; => num
+x=true; => boolean
+4- obj based => (lang objs [string , data , array ] , browser objs [document , navigator , history] , user defined objs)
+=> all is object
+5- event handler
+7-oop
+8-browser dependant => props =>works on specific browser
+-------------------------------
+
+how to write Js : 
+1-internal =>tag script in head / tag script in body
+2-external => js file => add script tag in html 
+3-inline => event handler 
+
+-------------------------
+
+JS type system:
+1- undefined => var x; => type of x
+2-boolean => var isChecked = false; 
+3-string => var name= "Nermeen"; => "" / ''  / ``
+4-number => var x= 5;
+5-null => var myVar =null;
+
+
+-------------------------
+
+declerations
+=> use var keyword 
+=> not use keywords as variable name
+=> variable name => begin with small letter  or capital or _ or $
+var _name 
+var $name
+var name
+var Name
+=>var 123abc ; => name not valid x
+=> var abc123 ; => valid name
+var first_name ; => valid
+var first_Name; => valid
+var fName ; => valid
+
+=> variable name => descriptive 
+var x=5
+var y =6
+var z= x*y;
+console.log(z);
+
+
+var variableNum1 = 5;
+var variableNum2 = 7;
+var multiple = variableNum1*variableNum2;
+var sum = variableNum1+variableNum2 ;
+
+console.log("sum", sum)
+ 
+----------------------------
+comments in js => line //
+               => multi line => /**/
+
+-----------------------------
+alert() =>JS alert => alert(message)
+----------------------------
+types of operator :
+1- unary => arithmetic operators => (-- , ++) => x++ , y--
+2-binary
+       *arithmetic operators => (+ , * , - , / , %) => x+y / x*y 
+       *assignment operators => ( += ,*= , -= , /= , =%) => x+=y => x=x+y
+                                                                   x(new val)=x(old val)+y
+       *comparsion operators => (< , > , == ) => to check different values
+       * logic operator ( && and , || or , ! not )
+       * string operators (+) => string => concat
+
+3-ternary =>  condition ? state in case of true : false
+

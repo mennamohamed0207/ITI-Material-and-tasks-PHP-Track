@@ -1,0 +1,9 @@
+1-print "Hello world " in external alert box 
+2-print your host name in browser console when users clicks on button print
+3-add your name , your family name and your age together then print it 
+4-add two string together with space between
+5-print "Hello world " + 55
+6-define x as 5 and y as 9 and print sum , multiple , sub , divide with event handling
+7-print "10" + 55
+8-print 10 + 70
+9-Using NaN in a mathematical string operation will concatenate NaN then print it
