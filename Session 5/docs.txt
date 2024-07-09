@@ -1,0 +1,149 @@
+operators
+
+1-arithmatic operators
+    => unary operators + =>  op convert operand to type number => +"5" => 5
+    => + add op => x+y 
+    => - sub op => x-y
+    => / division => x/y
+    => % modulus op => x%y
+    => * multiple op => x*y
+    => ++ increment op => ++x
+    => dec op => --x
+    => ** exponentitation => x**y
+
+
+2-assignment operators 
+   => = (assignment operator) => x= y
+   => += addassignment operator => x+=y  => x=x+y
+   => -= subassignment operator => x-=y  => x=x-y
+   => *= multiple assignment operator => x*=y => x=x*y
+   => /= division assignment op => x/=y => x=x/y
+   => %= modulus assignment op => x%=y => x=x%y
+   => **= exponentitation assignment op => x**= y => x=x**y
+
+
+3-comparsion operator =>
+    => == equality op => compare val 
+    => === strict equality => compare val & type
+    => != inquality op  => compare val 
+    => !== strict inequality  => compare val & type
+    => > greater 
+    =>  < less 
+    => >= greater or equal 
+    => <= less or equal 
+
+
+4- logic operator =>
+    => && And op =>all conditions muset be true
+    => || OR op => one or more condition must be true 
+    =>  ! Not operator
+
+
+
+false values  => 0 , false , "" ,  ''  , null , undefined 
+
+5- string operator (+) => str1 + str2 => concat add
+
+6- comma operator (,) /  semi colon op (;)
+
+7- ternry operator => cond ? success case : failure case ;
+
+--------------------------------------------------------
+
+
+condition statement true || false using If
+ => if (cond){ //true
+        in case of success  => do this script
+    }
+
+
+=> if (cond){ //true
+        in case of success  => do this script
+    }else{ //false => must do this script
+        in case of failure  => do this script
+
+    }
+
+
+=>if(cond1){
+        in case of success   in case of cond 1  => do this script
+
+}else if(cond2){
+        in case of success in case of cond 2  => do this script
+}
+
+=> if (cond){ //cond 1 true 
+        in case of success   in case of cond 1  => do this script
+    }else if(cond2 ) { //cond 2 true
+        in case of success in case of cond 2  => do this script
+    }else if(cond3 ) { //cond 3 true
+        in case of success in case of cond 3  => do this script
+    }else{
+                in case of failure  => do this script
+    }
+
+
+----------------------------------------------
+
+switch case 
+
+
+
+switch(experssion)  //experssion => values || variables
+{
+    case "cond":
+        do this script
+        break;
+    case "cond2":
+        do this script
+        break;
+    case "cond3":
+        do this script
+        break;
+    default:
+        do this script
+        break;
+
+}
+
+
+
+switch(experssion)  //experssion => values || variables
+{
+    case "cond":
+    case "cond2":
+    case "cond3":
+        do this script
+        break;
+    case "cond4":
+        do this script
+        break;
+    case "cond5":
+        do this script
+        break;
+    default:
+        do this script   
+        break;
+
+}
+
+///
+Dialoge Boxes 
+
+1-prompt
+    => get data from user 
+
+2-alert
+    => send/display message to user in pop up 
+
+3-confirm
+    => question by yes or no 
+    alert => with 2 btns =>cancel => return false
+                            ok => return true 
+
+                            
+
+
+
+
+
