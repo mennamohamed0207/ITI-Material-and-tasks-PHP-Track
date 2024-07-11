@@ -1,0 +1,79 @@
+controlling statements
+=> while loop => value  , number of loop is unknown
+
+while (cond){ //true
+    script for loop //excute
+}
+
+
+---------------------------------------
+do while =>  excute one time => check cond ,  number of loop is unknown
+
+do{
+    script for loop //excute
+
+}while(cond)
+
+
+----------------------------------------------------------------
+for loop => numbrt of loop is known 
+
+init val => operator value 
+cond => stopping cond 
+expression => increment || decrement
+
+for(init val ; cond ; expression ){
+    code statements
+}
+
+how for loop works =>
+1-init value
+2-check cond
+3- excute code 
+4-iteration
+5- after iteration => check cond again  => repeat  3-4 
+
+-----------------------------
+for in
+
+for (property in object){
+    code statements
+}
+
+--------------------------------------------
+for each => exxcute each element in array =
+> return element
+
+array.forEach((element) => code statements)
+
+-------------------------------
+`${i}` 
+
+`` => display as 
+${ variable} => display value of this variable
+
+-----------------------------------------------------------
+js funs
+
+builtin functions
+        => parseInt() => convert string to number ex:use prompt to get number from user  => return num 
+        =>parseFloat()  => convert string to  number with fractional ex:use prompt to get number from user 
+        =>isFinite() => return true with numerical val
+        =>isNaN() => return false => num    & return true => anything else number
+        =>decodeURI() => decode uri => ; / ? : @ & = + $ , #  
+        =>encodeURI()=> encode uri =>
+        => prompt() => to get data from user => always return string
+
+
+----------------------------------------------
+user defined funs
+
+=> function function_name(arg1 , arg2){
+    statements
+
+    return statements;
+}
+
+
+=> call function 
+
