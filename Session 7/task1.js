@@ -15,13 +15,13 @@ checkEmail(email);
 let students = [
     {
         name:"Menna",
-        degree:90
+        degree:88
     },{
         name:"Ahmed",
         degree:50
     },{
         name:"Fatma",
-        degree:85
+        degree:90
     }
 ]
 // a.	Find student Name, who got degree between 90 and 100 [Use find()].
