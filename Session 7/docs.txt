@@ -1,0 +1,93 @@
+JS Built in  objects 
+
+=> objects =>instance from class => instance store various of data or collection
+=> object => inherits props 
+
+
+1-string => props => length()
+str.length => calaculate every characters and spaces in the string
+
+
+string methods => 1-charAt() => charAt(num) => display the equavelent character
+               => 2-indexOf() =>to get the location of char => give char => return first index of equavelent char
+                              => using pattern => get index of the equavelent char which located in the middle of str
+               => 3-lastIndexOf() => to get the location of char => give char => return last index of equavelent char
+               => 4- trim() =>trim all empty space from beging and end
+               => 5- split() => remove spacific char || spacific pattern => always return array from str 
+               => 6- substring(x,y) = substring str from specific point (x) to another point(y) => x included & y not
+               => 7- replace("" , "") => 
+                => replace(/pattern/flag(i , m ,g), char) =>  flag  i => ignore => lower or upper case
+                                                                        m => multiple lines
+                                                                        g => global string
+
+
+=> str methods not affected on string except replace 
+
+---------------------------------------------------
+
+arrays 
+     => strongly typed lang => collection  => fixed size 
+     => [[array] , "str" , 101 , object]
+     => always first element => has index zero
+     => last element => has index = length-1
+
+
+array methods => 1- join() => convert arr => to str with new seperator
+              => 2- push() => add/push new element in arr at the end.
+              => 3 -pop() => remove element from arr at the end
+              => 4- unshift() => add/push new element in arr at the begining.
+              =>5- shift()=>remove element from arr at the begining
+
+push & pop => work on last index ( length-1)
+shift & unshift => similar to push & pop => work on first index (index = 0)
+
+push & unshift 
+pop & shift
+
+
+            => 6- reverse() => use to reverse array
+            => 7- sort() => sort according to unicode
+
+------------------------------------------
+Date => Date object => store date and time based on user's current time zone
+
+    Day => 0-6  => 0 == sun 
+                => 6 == sat
+
+    Month => 0 => 11  => 0 == jan
+                      => 11 == dec
+    
+    Day => 1 - 31 
+
+    Year => 0 => 1900
+            100 => 2000
+            119 => 2019
+            124 =>2024
+            
+
+    Hours => 0 - 23 => 0 == 12 am 
+                    => 23 == 11 pm
+
+    seconds & minutes => 0- 59  => 0== first sec | first min 
+                                => 59 == last sec | last min 
+
+    
+
+methods =>  1- get => get date => reterieve
+            2- set => set date => user set new date
+            3- to  => take different format date from date
+
+
+---------------------------------
+
+
+eval method() => send js as expression & run it 
+
+
+-------------------------------
+jumping statements  => control statements
+
+1- skip current iteration => continue;
+2- end loop => break;
+3-end function => return;
+

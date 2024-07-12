@@ -1,0 +1,11 @@
+* Ask the user to enter his Email, and use function strings (Don’t use RegExp) to check if the Email contains @, and not in the first or last index.
+
+
+*	Create an array of objects that hold student name along with his degree (Each element of the array is an object has 2 properties: Name and Degree).
+a.	Find student Name, who got degree between 90 and 100 [Use find()].
+b.	Print students names, who got a degree less than 60 [Use filter()].
+c.	Add a new student to the array [Use push()],()], and then use for…in to print all elements of the array.
+d.	Remove the last student of the array [Use pop()], and then use for…of to print all elements of the array.
+e.	Sort the array alphabetically based on the student name. 
+
+
