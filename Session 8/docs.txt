@@ -1,0 +1,57 @@
+BOM => Browser Object Modal
+    => 6 objects => 1 object => parent (window object) => global object
+    => location object
+    => history object
+    => screen object
+    => navigator object
+    => document object => DOM
+
+-----------------------------------------
+window object => prop
+              => methods =>  clear interval
+                        =>set interval
+                        => set timeout
+                        => alert
+                        => confirm
+                        =>prompt
+                        => scroll by
+                        =>open
+                        =>print
+
+-----------------------------------------
+
+// ---------------------------------
+// DOM   element=> document object modal
+// dom with browser |   standard dom 
+//                  |   w3c
+  prop  & methods     prop  & methods
+                    |           
+
+
+
+DOM obj => prop => inner HTML  & inner text
+        => methods => getElementById(); & getElementByTagName(); & getElementByClassName() 
+
+        => prop =>cookies  & title
+        => methods => document.write();
+
+
+                                ----------------------------------
+
+standard DOM (w3c) => prop => inner HTML  & inner text
+        => methods => getElementById(); & getElementByTagName(); & getElementByClassName() 
+
+
+
+                                --------------------------------
+
+DOM => works from top to bottom and from left to right
+
+firstChild =>first node not element ex: text
+firstElementChild => first element (tag) => <p>txt </p>
+lastChild => last  node not element ex: text
+lastElementChild => last element (tag) => <p>txt </p>
+parentElement => direct parent to this node
+childNodes =>  all nodes => all content => node list
+children =>  only elements => html collection
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task 2</title>
+
+    <style>
+        .yes {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+        }
+        .no {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="confirmid" ">div with confirm </div>
+    <script>
+        function takeConfirm() {
+            let result = confirm("Are you sure?");
+            let confirmDiv = document.getElementById("confirmid");
+
+            if (result) {
+                confirmDiv.classList.add("yes");
+            } else {
+                confirmDiv.classList.add("no");
+            }
+        }
+        takeConfirm();
+    </script>
+</body>
+</html>

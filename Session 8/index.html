@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- PARENT NODE-->
+
+<head> <!--1st child-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <script>
+        // accesing DOM
+        // 1st way:
+        // document.body.children[0]; => div1
+        // document.body.children[0].nextElementSibling; => div2
+        // document.body.children[0].nextSibling; =>txt between div one (div one)
+
+
+        // 2nd way:
+        // document.getElementById("div1"); => div1 => id   ==== document.querySelector("#div1")
+        // document.getElementByClassName("txt") => txt =>className ==== document.querySelector(".txt")
+        // document.getElementByTagName("p") => p=>tagName
+
+        // document.querySelector("input[type=text]");
+        // document.querySelector('input[type="text"]').style.backgroundColor = "red";
+    </script>
+
+    <style>
+        .class1 {
+            color: rgba(15, 70, 172, 0.178);
+            font-weight: bold;
+            border: 1px solid red;
+        }
+
+
+        .class2 {
+            font-size: 28px;
+            color: brown;
+            background-color: aliceblue;
+
+        }
+    </style>
+</head>
+
+<body> <!--2nd child-->
+    <!-- parent for div (parent node)   -->
+
+
+    <div id="div1" class="title"> div one <p>txt</p>
+    </div> <!--1st child for body -->
+    <div id="div2"> div 2</div>
+    <div id="div3" class="class1"> div 3</div>
+
+    <div id="div4"> div 4</div>
+    <div id="div5" class="title"> div 5</div>
+    <p class="txt"> paragraph</p>
+    <input type="text" placeholder="fname" name="fname" />
+    <input type="text" placeholder="lname" name="lname" />
+
+
+    <div id="div6"> div 6</div><!--last child for body -->
+    <!-- <form id="formSignIn" name="myform" action="child2.html" method="post" onsubmit="validateForm()">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form> -->
+    <!-- <input type="button"  value="open win" onclick="openWin()" />
+    <input type="button"  value="close win" onclick="closeWin()" /> -->
+    <!-- <input type="button"  value="move win" onclick="MoveWindow()" /> -->
+
+
+    <!--  <input type="button"  value="open child win 2" onclick="openWin2()" />
+    <input type="button"  value="close child win 2" onclick="closeWin2()" /> -->
+    
+
+
+    <!-- <input type="button"  value="close alert" onclick="closeAlert()" /> -->
+    <!-- <input type="button"  value="goTOHistory" onclick="goTOHistory()" /> -->
+    <!-- <input type="button"  value="update location" onclick="updateLocation()" /> -->
+    <a href="https://www.google.com" name="anchor-tag" id="myLink"> Google</a>
+    <hr />
+    <input type="button"  value="change behvaiour" onclick="anchorTag()" />
+
+
+    <script>
+            console.log(document.getElementById("myLink").getAttribute("target"));
+            document.getElementById("myLink").setAttribute("target" , "_blank");
+        let anchorTag = document.getElementById("myLink");
+        let aName = anchorTag.attributes.target;
+console.log(aName);
+
+
+        // function anchorTag(){
+        //     document.getElementById("myLink").setAttribute("target" , "_blank");
+        //   var x =  document.getElementById("myLink").getAttribute("target");
+
+
+        //     console.log(x);
+        // }
+        
+
+        // anchorTag.innerHTML = anchorName;
+        // document.querySelector('.txt').style.backgroundColor = "blue";
+
+        // document.body.children[3].innerHTML = "<b> HTML DIV</b> ";
+        // document.body.children[4].innerText = "<b> HTML DIV</b> ";
+
+        // document.querySelector('input[type="text"]').style.backgroundColor = "red";
+        // document.body.children[4].style.color = "blue";
+
+
+        // document.getElementById("div1").className; //title
+        // document.getElementById("div1").classList.add("class1");
+        // document.getElementById("div2").classList.add("class2");
+
+        // document.getElementById("div3").classList.remove("class1");
+
+        //        var newElem= document.createElement("p");
+        //         newElem.innerHTML ="<b>HTML DIV</b>";
+        //         // var body = document.body;
+        //         // body.appendChild(newElem);
+        // var div4 = document.getElementById("div4");
+        // div4.appendChild(newElem);
+    </script>
+</body>
+
+</html>
