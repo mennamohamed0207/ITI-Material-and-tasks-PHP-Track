@@ -15,11 +15,6 @@ Components of Location include Address, City, State, and Zip_Code.
 •	Each property must be listed with one (and only one) of the sales offices.
  A sales office may have any number of properties listed, or may have no properties listed. 1 to m 
 portperty total
-
-
-
-
-
 •	Each property has one or more owners. 
 Attributes of owners are Owner_ID and Owner_Name. m to m
 An owner may own one or more properties. The system stores the percent owned by each owner in each property.
