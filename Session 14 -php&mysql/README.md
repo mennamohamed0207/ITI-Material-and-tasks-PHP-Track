@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # CRUD Operations with 
 - Using php&mysql for Backend
 - Using HTML&CSS&Bootstrap
