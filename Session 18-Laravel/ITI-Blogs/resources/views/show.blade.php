@@ -1,7 +1,6 @@
 @extends('layout.app')
 
 @section('content')
-<h1 class="h1" >Post {{$post['id']}}</h1>
 
 
     <div class="card" style="width: 36rem;">
