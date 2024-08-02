@@ -4,12 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use Illuminate\Contracts\Pagination\Paginator;
+use Illuminate\Pagination\Paginator as PaginationPaginator;
+use Illuminate\Support\Facades\DB;
+
 
 class PostController extends Controller
 {
     public function index()
     {
-        return view('index', ['posts' => Post::all()]);
+        PaginationPaginator::useBootstrap();
+        $posts = Post::all();
+        $pagination=Post::paginate(10);
+        return view('index', ['posts' => $pagination]);
     }
     public function show($id)
     {

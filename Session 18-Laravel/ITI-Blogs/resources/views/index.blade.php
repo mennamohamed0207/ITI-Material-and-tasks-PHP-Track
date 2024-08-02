@@ -17,10 +17,15 @@
             @method('DELETE')
             <button type="submit" class="btn btn-danger mt-2">Delete</button>
         </form>
-        </div>
-      </div>
 
-    @endforeach
+
+        </div>
+        
+      </div>
+      
+      @endforeach
+      <div>        {{ $posts->links() }}
+     </div>
 
 
 @endsection
