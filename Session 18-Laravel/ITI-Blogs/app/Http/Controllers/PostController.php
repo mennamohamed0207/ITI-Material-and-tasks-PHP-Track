@@ -7,6 +7,7 @@ use App\Models\Post;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Pagination\Paginator as PaginationPaginator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 
 class PostController extends Controller
@@ -79,5 +80,6 @@ class PostController extends Controller
         $post->delete();
         return redirect('/home');
     }
+
 
 }

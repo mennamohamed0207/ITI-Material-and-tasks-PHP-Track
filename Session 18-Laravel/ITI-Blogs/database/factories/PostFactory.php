@@ -20,7 +20,7 @@ class PostFactory extends Factory
             'title' => $this->faker->sentence(),
             'description' => $this->faker->paragraph(),
             //images:1.jpg, 2.jpg, 3.jpg
-            'image' => 'images/' . $this->faker->numberBetween(1, 3) . '.jpg',
+            'image' => $this->faker->numberBetween(1, 3) . '.jpeg',
         ];
     }
 }
